@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+           let arrayDeNumeros = Array();
+           console.log(arrayDeNumeros);
+           for ( x = 0; x < 5; x++) {
+            arrayDeNumeros[x] = parseInt (prompt("Ingresa los numeros"));
+           }
+
+    let mayor = 0;
+    let indexMayor = 0;
+    arrayDeNumeros.forEach((number, index) => {
+      if (number > mayor) {
+        mayor = number;
+        indexMayor = index;
+      }
+    });
+    alert ("El numero mayor es");
+    document.write(arrayDeNumeros);
+    window.alert (arrayDeNumeros[indexMayor]);
+    console.log(arrayDeNumeros[indexMayor]);
+    </script>
+</body>
+</html>

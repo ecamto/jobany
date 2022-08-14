@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let velocidad=prompt ('Ingrese la velocidad de desplazo:',''); 
+    velocidad=parseInt(velocidad);
+    console.log(velocidad < 1000);  
+        
+switch (true) {
+    case (velocidad <= 1000):
+        alert("te transportas a pie");
+        break;
+    case (velocidad <= 10000):
+        alert("te transportas a bicicleta");
+        break;
+    case (velocidad <= 30000):
+        alert("te transportas en colectivo");
+        break;
+    case (velocidad < 100000):
+        alert("te transportas en auto");
+        break;
+    case (velocidad >= 100000):
+        alert("te transportas en avion");
+    break;    
+        default:
+        alert("none");
+        break;
+}
+    </script>
+</body>
+</html>
